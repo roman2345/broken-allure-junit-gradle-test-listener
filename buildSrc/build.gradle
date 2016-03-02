@@ -1,0 +1,16 @@
+apply plugin: 'java'
+
+repositories {
+    mavenCentral()
+}
+
+allprojects {
+    sourceCompatibility = 8
+    targetCompatibility = 1.8
+}
+
+dependencies {
+    compile gradleApi()
+    compile "ru.yandex.qatools.allure:allure-java-annotations:${allureVersion}"
+    compile "ru.yandex.qatools.allure:allure-java-aspects:${allureVersion}"
+}
